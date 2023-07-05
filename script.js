@@ -5,8 +5,10 @@ window.addEventListener('load', function() {
             const div = document.getElementById("container");
 
             for (let i=0; i< json.length; i++) {
+                
 
-                    div.innerHTML = `
+                    div.innerHTML = div.innerHTML + 
+                    `
                     <div class="astronaut">
                         <div class="bio">
                             <h3>${json[i].firstName} ${json[i].lastName}</h3>
